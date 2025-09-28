@@ -1,0 +1,86 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.dll
+*.pdb
+*.exe
+!*.exe.config
+*.log
+*.tmp
+*.temp
+
+# Visual Studio / Rider
+.vs/
+.vscode/
+.idea/
+*.sln.docstates
+*.userprefs
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+*.env
+
+# Kafka / Zookeeper data
+kafka-logs/
+zookeeper-data/
+kafka-data/
+
+# Logs
+logs/
+*.log
+*.out
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Python (para scripts de teste)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Node modules (se houver)
+node_modules/
+npm-debug.log*
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Certificates
+*.pfx
+*.p12
+*.key
+*.pem
+*.crt
+
+# Backup files
+*.bak
+*.backup
+*.old
