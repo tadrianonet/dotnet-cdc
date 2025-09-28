@@ -1,6 +1,20 @@
 version: '3.8'
 
 services:
+  # SQL Server com CDC habilitado
+  sqlserver-cdc:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    hostname: sqlserver-cdc
+    container_name: sqlserver-cdc
+    ports:
+      - "1433:1433"
+    environment:
+      ACCEPT_EULA: Y
+      SA_PASSWORD: MinhaSenh@123
+      MSSQL_AGENT_ENABLED: true
+    networks:
+      - debezium-network
+
   # Zookeeper - coordenação do cluster Kafka
   zookeeper:
     image: confluentinc/cp-zookeeper:7.4.0

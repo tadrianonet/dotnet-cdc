@@ -13,7 +13,7 @@ public class EventoEcommerce
     public decimal Value { get; set; }
 }
 
-class StreamProcessor
+class StreamProcessor : IDisposable
 {
     private readonly IProducer<string, string> _producer;
     private readonly IConsumer<string, string> _consumer;
